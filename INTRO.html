@@ -1,91 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>*INTRO*</title>
+  <title>INTRO</title>
   <style>
-    body{
+    body {
       margin: 0;
-      background-color: black;
-    }
-    .custom-font {
+      background-color: rgb(73, 73, 73);
       font-family: Arial, sans-serif;
-      font-weight: bold;
     }
-    div{
-      margin-top: 10%;
+
+    .container {
+      margin: 10% auto;
       padding: 20px;
-      margin-left: 20%;
-      background-color: darkgoldenrod;
+      max-width: 800px; /* Set a maximum width for larger screens */
+      background-color: rgb(11, 147, 184);
       text-align: center;
-      width: 50%;
-      align-content: center;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       border-radius: 10px;
+      transform: translateY(100px);
+      opacity: 0;
+      animation: slide-in 1s ease forwards;
     }
-    img{
-      height: 200px;
+
+    img {
+      max-width: 100%;
+      height: auto;
       border-radius: 50%;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
     }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
     .title {
-      color: #fff;
+      color: #ff0000;
       font-size: 32px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
       animation: glowing 2s infinite;
+      transition: color 0.3s ease;
     }
+
     .title:hover {
       color: #ffdd00;
     }
+
     h2 {
       margin-top: 20px;
       font-size: 24px;
-      color: #fff;
+      color: #000000;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     }
+
     h3 {
-      margin-top: 10px;
       font-size: 18px;
-      color: #fff;
+      color: #ffffff;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      transition: color 0.3s ease;
     }
+
     h3 a {
       color: #ffdd00;
       text-decoration: none;
-      transition: all 0.3s ease;
     }
+
     h3 a:hover {
-      color: #fff;
+      color: #a9ff67b2;
+      text-decoration: underline;
     }
+
     p {
       margin-top: 10px;
-      color: #fff;
+      color: #000000;
       font-size: 16px;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     }
+
     @keyframes glowing {
       0% {
-        color: #ffdd00;
+        color: #ff0000;
       }
       50% {
-        color: #ffbf00;
+        color: #eeff00;
       }
       100% {
-        color: #ffdd00;
+        color: #ff9d00fe;
+      }
+    }
+
+    @keyframes slide-in {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 600px) {
+      .container {
+        width: 90%; /* Adjust the width for smaller screens */
       }
     }
   </style>
 </head>
 <body>
-  <div>
+  <div class="container">
     <img src="img.jpg" alt="" id="img">
-    <h1 class="title">*Hello World!* </h1>
-    <h2>I'm  <span style="color:blue">*ARSHAN MANSURI*</span></h2>
-    <h3>*Click the link to visit My LinkedIn*:  <a href="https://www.linkedin.com/in/arshan-mansuri-139b93195/">Do Connect Me On LinkedIn</a></h3>
-    <h3>*Click the link to visit My Instagram*:  <a href="https://www.instagram.com/justarsn/">Do Connect Me On Instagram</a></h3>
-    <h3>*Connect Me On Twitter*:  <a href="https://www.twitter.com/justarsn">let's Retweet</a></h3>
-    <h3>*Click Here To See My YouTube Channels *:  <a href="https://arsn72.github.io/INTRO/youtube.html">Click Here</a></h3>
-    <p> *Pursuing B.Tech Degree course In CSIT-CS*</p>
-    <p> *Learning Web-Development*</p>
+    <h1 class="title">HELLO WORLD! </h1>
+    <h2>I'm <span style="color: blue">ARSHAN MANSURI</span></h2>
+    <h3>Click the link to visit My LinkedIn: <a href="https://www.linkedin.com/in/arshan-mansuri-139b93195/">Do Connect Me On LinkedIn</a></h3>
+    <h3>Click the link to visit My Instagram: <a href="https://www.instagram.com/justarsn/">Do Connect Me On Instagram</a></h3>
+    <h3>Connect Me On Twitter: <a href="https://www.twitter.com/justarsn">let's Retweet</a></h3>
+    <h3>Click Here To See My YouTube Channels: <a href="https://arsn72.github.io/INTRO/youtube.html">Click Here</a></h3>
+    <p>Pursuing B.Tech Degree course In Cyber Security and BlockChain Technology (CSIT-CS)</p>
+    <p>🤞🏼</p>
   </div>
 </body>
 </html>
