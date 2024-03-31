@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    animation: changeBackground 10s infinite alternate; /* Apply animation to change background */
+  }
+  
+  @keyframes changeBackground {
+    0% { background: linear-gradient(to right, #ff7e5f, #feb47b); } /* Starting gradient */
+    50% { background: linear-gradient(to right, #feb47b, #ff7e5f); } /* Middle gradient */
+    100% { background: linear-gradient(to right, #ff7e5f, #feb47b); } /* Ending gradient */
+  }
+  
+  .container {
+    margin-top: 10%;
+    padding: 20px;
+    margin-left: 20%;
+    background-color: rgb(193, 151, 37);
+    text-align: center;
+    width: 60%; /* Adjusted width for better alignment */
+  }
+  
+  .linkedin-badge {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the badge horizontally */
+    align-items: center; /* Center the badge vertically */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+  }
+  
+  .linkedin-badge .badge-base {
+    margin-right: 20px; /* Add margin to separate badge from text */
+  }
+  
+  .profile-image {
+    height: 200px;
+  }
+  
+  .title {
+    font-weight: bold;
+  }
+  
+  .profile-badge a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .name {
+    color: blue;
+  }
+  
